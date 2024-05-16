@@ -95,12 +95,62 @@ nav p{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.banner__content button:hover{
-    background-color: var(--Secundary-color);
+.banner__content button:active{
+    /* background-color: var(--Secundary-color);
     border: 3px solid var(--Primary-green);
-    color: var(--Primary-green);
+    color: var(--Primary-green); */
+    transform: scale3D(.95,.95,1);
+
 }
 
 .logo{
     width: 12em;
 }
+
+.services{
+    margin: 20px 26px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.services__card{
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    background-size: cover;
+}
+
+.services__card h1{
+    color: white;
+    font-size: 2.0rem;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.landscaping{
+    grid-row: span 2;
+    background-image: url('../assets/landscaping.jpg');
+    background-position-x: start;
+}
+.gardenDesign{
+    grid-column: span 2;
+    background-image: url('../assets/garden_design.jpg');
+}
+
+.creation{
+    background-image: url('../assets/creation.jpg');
+
+}
+
+.maintanance{
+    background-image: url('../assets/maintenance.jpg');
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
