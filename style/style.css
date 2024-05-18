@@ -186,7 +186,7 @@ nav p{
 
 }
 
-.maintanance{
+.maintenance{
     background-image: url('../assets/maintenance.jpg');
 
 }
@@ -243,7 +243,7 @@ nav p{
     align-items: center;
     justify-content: center;
     color: var(--Secundary-color);
-    height: 50vh;
+    height: 560px;
     background-image: url("../assets/cover.jpg");
     background-size: cover;
     background-position: center;
@@ -263,6 +263,194 @@ nav p{
     font-weight: bold;
 }
 
+
+.products {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.products h1 {
+    font-family: "Oswald", sans-serif;
+    font-size: 3.2rem;
+    padding-bottom: 16px;
+    color: var(--Primary-green);
+}
+
+.products h2 {
+    font-size: 1.6rem;
+    color: #7a7a7a;
+    font-weight: 300;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--Primary-green);
+    margin: 20px 0;
+}
+
+.products__category{
+    margin: 26px;
+}
+
+.products__category h2{
+    font-family: "Oswald",sans-serif;
+    color: var(--Primary-green);
+    font-size: 2.0rem;
+    font-weight: bold;
+
+}
+
+.products__carousel {
+    padding: 64px 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.products__card {
+    background-color: white;
+    width: 208px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    scroll-snap-align: center;
+    margin: 0 10px;
+}
+
+.products__card img {
+    width: 208px;
+    height: 208px;
+    margin-bottom: 10px;
+}
+
+.products__card p {
+    margin: 5px 0;
+    color: #5a5a5a;
+}
+
+.contact {
+    background-color: #56a6a6;
+    color: white;
+    padding: 40px 20px;
+}
+
+.contact h1 {
+    font-family: "Oswald",sans-serif;
+    font-size: 3.2rem;
+}
+
+.contact h2 {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.contact img {
+    width: 64px;
+}
+
+.contact__info {
+    margin-bottom: 20px;
+}
+
+.contact__info > *{
+    padding: 8px;
+    text-align: center;
+}
+
+.info__container p {
+    margin: 10px 0;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    align-items: center;
+}
+
+.contact__form form {
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact__form .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact__form img{
+    width: 64px;
+}
+
+.contact__form .input span {
+    color: white;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact__form .icon--telephone{
+    background-image: url("../assets/phone-icon.svg");
+}
+.contact__form .icon--email{
+    background-image: url("../assets/email-icon.svg");
+}
+.contact__form .icon--username{
+    background-image: url("../assets/user-icon.svg");
+}
+
+.contact__form .input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact__form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__container li {
+    margin: 5px 0;
+}
+
+.footer__container .social_media span {
+    display: block;
+}
 
 
 @media (max-width: 768px) {
